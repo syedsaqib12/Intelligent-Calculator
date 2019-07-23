@@ -20,12 +20,12 @@ let intelligence = [
 function intelligentApp(name) {
 
     let randomNumber = parseInt(Math.random() * intelligence.length);
-    result.innerHTML = name + " You are" + intelligence[randomNumber];
+    result.innerHTML = name + " You are " + intelligence[randomNumber];
 
 
 }
 
-}
+
 document.querySelector("button").addEventListener('click', function () {
     if (document.querySelector("input").value == "") {
         alert("Please Enter a Name");
@@ -33,7 +33,7 @@ document.querySelector("button").addEventListener('click', function () {
 	  
 	  
 	  else {
-        quizApp(document.querySelector("input").value.toUpperCase());
+        intelligentApp(document.querySelector("input").value.toUpperCase());
         document.querySelector("input").value = "";
     }
 })
